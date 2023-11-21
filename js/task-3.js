@@ -4,7 +4,7 @@ function checkForSpam(message) {
     const chekSecond = mesLowerCase.includes('sale');
     const allchek = chek || chekSecond;
    
-    console.log(allchek);
+    return allchek;
 
 }
 
