@@ -1,8 +1,8 @@
 function checkForSpam(message) {
-    const mesLowerCase = message.toLowerCase();
-    const chek = mesLowerCase.includes('spam');
-    const chekSecond = mesLowerCase.includes('sale');
-    const allchek = chek || chekSecond;
+    const normalizedMessage = message.toLowerCase();
+    const isSpamPresent = normalizedMessage.includes('spam');
+    const isSalePresent = normalizedMessage.includes('sale');
+    const allchek = isSpamPresent || isSalePresent;
    
     return allchek;
 
